@@ -13,9 +13,9 @@ function handlesubmit(event) {
   } else if (!inputPhonenumber.length) {
     return alert(`Nomornya kosong boss`);
   } else if (!inputsubject.length) {
-    return `Pilih dulu Mau kelas apa boss`;
+    return alert`Pilih dulu Mau kelas apa boss`;
   } else if (!inputpesan.length) {
-    return `kirim Pesan apa boss`;
+    return alert`kirim Pesan apa boss`;
   }
 
   const link = document.createElement("a");
@@ -26,8 +26,8 @@ function handlesubmit(event) {
   const contac = {
     name: inputname,
     email: inputemail,
-    phoneNumber: inputPhoneNumber,
-    subject: inputSubject,
+    phoneNumber: inputPhonenumber,
+    subject: inputsubject,
     message: inputMessage,
   };
 
